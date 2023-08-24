@@ -47,20 +47,21 @@ Android Studio offers a complete, integrated IDE experience for Flutter.
 -   Click on Android Studio \> Run \> Run
 -   It will automatically install apk on proculus
 ## 3.  **Project Structure and Files:**
-  ![Project](/img/project.png)
+![Project](/img/project.png)
     
     -   assets folder :- This folder contain all images and logos
 ![Assets](/img/assets.png)
 
     -   fonts folder :- This folder contain project fonts
-![Fonts](/img/fonts.png)
+![Fonts](/img/font.png)
 
     -   lib folder: Main project source code folder
 ![Lib](/img/lib.png)
 
     -   main.dart -\> Startting class of project that have splash screen widget with 4 sec timer for screen. Connection for uart and start timer of getting temperatures.
-
-    -   screen folder-\> This folder include all pages of app and ui.
+~~~
+-   screen folder-\> This folder include all pages of app and ui.
+~~~
 ![Screen](/img/screen.png)
 
     -   about.dart -\> Frame-65, App about screen to show info of app.
@@ -74,10 +75,11 @@ Android Studio offers a complete, integrated IDE experience for Flutter.
     -   runmode.dart -\> Frame-32, Show live temperature and LED brightness.
     -   temp_offset.dart-\> Frame-56, Edit temperature offset screen
     -   temp_set_point.dart-\>Frame-39, Edit temperature setpoint.
-    
-    -   utils folder-\> app utility folder
+~~~    
+-   utils folder-\> app utility folder
+~~~
 ![Utils](/img/utils.png)
-
+~~~
 -   alarm.dart-\> Alarm and timer for app
 -   color.dart -\> App color constant file
 -   constant.dart-\>App static constant file
@@ -86,10 +88,12 @@ Android Studio offers a complete, integrated IDE experience for Flutter.
 -   string.dart-\>App static string constant file
 -   uart.dart-\> Uart connection, data send and receive
 -   uart.api-\> Uart api
+~~~
+~~~
 -   widgets folder:- App ui folder
-
-![](Aspose.Words.146c0465-47ab-40b4-8fe1-2e5410362e8e.007.png)
-
+~~~
+![Widget](/img/widgets.png)
+~~~
 -   background_img_stack.dart-\> Background device module images
 -   bk_start_time.dart-\> Widget of Background start time button
 -   bk_temp_edit.dart-\> Widged of background temperature edit buttin
@@ -100,7 +104,8 @@ Android Studio offers a complete, integrated IDE experience for Flutter.
 -   dash.dart-\> Widget of dash line
 -   navbar_menue.dart-\> widget of navbar menu
 -   navbar_title.dart-\> Widget of navbar title
-1.  **External Library :**
+~~~
+## 4.  **External Library :**
 
 | **Package**          | **Recommended Version** | **Descrirption**                                                                                                                                                                         |
 |----------------------|-------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -115,10 +120,8 @@ Android Studio offers a complete, integrated IDE experience for Flutter.
 | flutter_svg          | 2.0.5                   | An SVG rendering and widget library for Flutter, which allows painting and displaying Scalable Vector Graphics 1.1 files.                                                                |
 | serial_communication | 0.0.2                   | An Android Plugin for Serial Communication which allows you to read and write the data through the available ports                                                                       |
 
-1.  **Screen Flow Chart :**
+## 5.  **Screen Flow Chart :**
+![Flow](/img/flow.png)
 
-![C:\\Users\\admin\\Downloads\\Untitled Diagram.drawio.png](Aspose.Words.146c0465-47ab-40b4-8fe1-2e5410362e8e.008.png)
-
-1.  App Flow Chart
-
-    ![](media/314c2915c0c891c8021ff48673874846.png)
+## 6.  **App Flow Chart :**
+![App Flow](/img/app_flow.png)
