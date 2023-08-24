@@ -4,7 +4,7 @@
 
 The HistoPro 650 Tissue Embedding Center (The Embedding Center) is a modular system to be used for embedding processed tissue in paraffin to prepare the tissue blocks for sectioning. There are two modules in HistoPro® 650 Embedding System. 1. HistoPro 650 H (The Hot Module) is the Hot Module of the system that contains the paraffin tank, two warming trays that can be used either as a mold oven or a cassette bath, two forceps holders, heated work surface and a peltier cooled cold spot. The tissue embedding is performed on this module. 2. HistoPro 650 CS (the Cold Module) is the Cold Module of the system that contains the cold plate.
 
-### 1.  **Development environment :-**
+## 2.  **Development environment :-**
 A.  Set up an editor :-
 
 Android Studio offers a complete, integrated IDE experience for Flutter.
@@ -21,28 +21,33 @@ Android Studio offers a complete, integrated IDE experience for Flutter.
 3.  Path Setup:
 -   Path setup for Dart:
 ~~~
--   Android Studio \> File \> Settings \> Plugins \> Language& Frameworks \> Flutter
+-   Android Studio-> File->Settings-> Plugins->Language& Frameworks->Flutter
 ~~~
 -   Path setup for Dart:
 ~~~
 -   Android Studio->File->Settings->Plugins->Language & Frameworks->Dart
 ~~~
-1.  Check flutter installation:
--   Android Studio \> Tools \> Flutter \> Flutter Doctor
-1.  Deploy Source Code:
--   Android Studio \> File \> Open \> Select Directory
-1.  Install external packages for project:
--   Android Studio \> Tools \> Flutter \> Flutter Pub Get
-1.  Install apk on proculus:
+4.  Check flutter installation:
+~~~
+-   Android Studio->Tools->Flutter->Flutter Doctor
+~~~
+5.  Deploy Source Code:
+~~~
+-   Android Studio-> File->Open->Select Directory
+~~~
+6.  Install external packages for project:
+~~~
+-   Android Studio-> Tools->Flutter->Flutter Pub Get
+~~~
+7.  Install apk on proculus:
 -   Provide sufficient power to Poculus to power on i.e. Required 06 to 24 voltage. The power supply of 12v (recommended).
 -   Connect the Proculus to your computer via Micro USB (USB DEBUG1. USB HOST3).
 -   Remember when using Micro USB for project download, you must provide a power supply to the LCM.
 -   Android LCM will recognize automatically when USB connects to the DEBUG interface.
 -   Click on Android Studio \> Run \> Run
 -   It will automatically install apk on proculus
-1.  **Project Structure and Files:**
+## 3.  **Project Structure and Files:**
     1.  ![C:\\Users\\admin\\Desktop\\Histpro.png](Aspose.Words.146c0465-47ab-40b4-8fe1-2e5410362e8e.001.png)assets folder :- This folder contain all images and logos
-
 ![](Aspose.Words.146c0465-47ab-40b4-8fe1-2e5410362e8e.002.png)
 
 -   fonts folder :- This folder contain project fonts
