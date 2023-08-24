@@ -47,36 +47,36 @@ Android Studio offers a complete, integrated IDE experience for Flutter.
 -   Click on Android Studio \> Run \> Run
 -   It will automatically install apk on proculus
 ## 3.  **Project Structure and Files:**
-    1.  ![C:\\Users\\admin\\Desktop\\Histpro.png](Aspose.Words.146c0465-47ab-40b4-8fe1-2e5410362e8e.001.png)assets folder :- This folder contain all images and logos
-![](Aspose.Words.146c0465-47ab-40b4-8fe1-2e5410362e8e.002.png)
+  ![Project](/img/project.png)
+    
+    -   assets folder :- This folder contain all images and logos
+![Assets](/img/assets.png)
 
--   fonts folder :- This folder contain project fonts
+    -   fonts folder :- This folder contain project fonts
+![Fonts](/img/fonts.png)
 
-![](Aspose.Words.146c0465-47ab-40b4-8fe1-2e5410362e8e.003.png)
+    -   lib folder: Main project source code folder
+![Lib](/img/lib.png)
 
--   lib folder: Main project source code folder
+    -   main.dart -\> Startting class of project that have splash screen widget with 4 sec timer for screen. Connection for uart and start timer of getting temperatures.
 
-![](Aspose.Words.146c0465-47ab-40b4-8fe1-2e5410362e8e.004.png)
+    -   screen folder-\> This folder include all pages of app and ui.
+![Screen](/img/screen.png)
 
--   main.dart -\> Startting class of project that have splash screen widget with 4 sec timer for screen. Connection for uart and start timer of getting temperatures.
--   screen folder-\> This folder include all pages of app and ui.
-
-![](Aspose.Words.146c0465-47ab-40b4-8fe1-2e5410362e8e.005.png)
-
--   about.dart -\> Frame-65, App about screen to show info of app.
--   brightness.dart -\> Frame-45, User can change LED brightness here. After user change data send to uart and also save in shared preferances.
--   configuration.dart-\> Frame-33, Configuration page is used for show users set temperature setpoints.
--   configuration_auto_start.dart -\>Frame-35, Configuration page is used for show users set autostart time.
--   configuration_offset.dart-\> Frame-57, Configuration page is used for show users set temperature offsets.
--   editstarttime.dart -\> Frame-44, Edit page for edit start time of both hot and cold module.
--   errors.dart -\> Frame-73, Errors and warning description page.
--   legend.dart -\> Frame – 64, This page have info about both hot and cold module parts.
--   runmode.dart -\> Frame-32, Show live temperature and LED brightness.
--   temp_offset.dart-\> Frame-56, Edit temperature offset screen
--   temp_set_point.dart-\>Frame-39, Edit temperature setpoint.
--   utils folder-\> app utility folder
-
-![](Aspose.Words.146c0465-47ab-40b4-8fe1-2e5410362e8e.006.png)
+    -   about.dart -\> Frame-65, App about screen to show info of app.
+    -   brightness.dart -\> Frame-45, User can change LED brightness here. After user change data send to uart and also save in shared preferances.
+    -   configuration.dart-\> Frame-33, Configuration page is used for show users set temperature setpoints.
+    -   configuration_auto_start.dart -\>Frame-35, Configuration page is used for show users set autostart time.
+    -   configuration_offset.dart-\> Frame-57, Configuration page is used for show users set temperature offsets.
+    -   editstarttime.dart -\> Frame-44, Edit page for edit start time of both hot and cold module.
+    -   errors.dart -\> Frame-73, Errors and warning description page.
+    -   legend.dart -\> Frame – 64, This page have info about both hot and cold module parts.
+    -   runmode.dart -\> Frame-32, Show live temperature and LED brightness.
+    -   temp_offset.dart-\> Frame-56, Edit temperature offset screen
+    -   temp_set_point.dart-\>Frame-39, Edit temperature setpoint.
+    
+    -   utils folder-\> app utility folder
+![Utils](/img/utils.png)
 
 -   alarm.dart-\> Alarm and timer for app
 -   color.dart -\> App color constant file
