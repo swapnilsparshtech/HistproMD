@@ -18,6 +18,7 @@ Under theme configuration, we allow user to configure theme colors to be used to
 
 ## 5.	Folder Structure
 ![Folder](/img/source.png)
+
 A standard npm folder structure is maintained. Some dedicated folders are kept to give flexibility to developer for future enhancements.
 Assets > This is common folder to keep css and javascript code which is to be used in application
 Bootstrap > This library is added to make our screens responsive and user friendly. As it gives more functionalities for screen size wise developments.
@@ -29,7 +30,42 @@ Package.json > This is main npm file to maintain all used dependencies for npm p
 - Backend: Node.js.
 - Packaging: electron.js.
 
-## 7.	App Structure
+## 7.   Package Installation:
+### A. Node:-
+#### Requirements
+One of the following versions of Node.js must be installed to run npm:
+- 14.x.x >= 14.17.0
+- 16.x.x >= 16.13.0
+- 18.0.0 or higher
+#### Installation
+npm comes bundled with node, & most third-party distributions, by default. Officially supported downloads/distributions can be found at: [nodejs.org/en/download](nodejs.org/en/download)
+
+### B. Electron:-
+#### Installation
+To install prebuilt Electron binaries, use npm. The preferred method is to install Electron as a development dependency in your app:
+~~~
+npm install electron --save-dev
+~~~
+### C. Other Packages
+#### Installation
+To install other packages from package.json:
+~~~
+npm install
+~~~
+## 8. Generate .exe file:
+- To run electron project open cmd in containing project folder and run following command:
+~~~
+electron .
+~~~~
+- To create .exe file run following command:
+~~~
+electron-forge make
+~~~
+- You can find .exe file in following folder:
+~~~~
+Folder Path\out\make\squirrel.windows\x64
+~~~~
+## 9.	App Structure
 Company Configuration File description
 As per our configuration app we create 2 configuration json files.
 A.	Theme configuration
