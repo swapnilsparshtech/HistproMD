@@ -17,6 +17,7 @@ Under Company configuration, we allow user to configure the company details. Her
 Under theme configuration, we allow user to configure theme colors to be used to show buttons and texts. This exports Json which changes look and feel of the main HISTPRO application.
 
 ## 5.	Folder Structure
+![Folder](/img/source.png)
 A standard npm folder structure is maintained. Some dedicated folders are kept to give flexibility to developer for future enhancements.
 Assets > This is common folder to keep css and javascript code which is to be used in application
 Bootstrap > This library is added to make our screens responsive and user friendly. As it gives more functionalities for screen size wise developments.
@@ -38,7 +39,7 @@ These files are utilized to customize our main app as administrator. This way we
 JSON file created through admin application built. 
 #### a.	User Inputs
 Admin can change the theme for the deployed application using configuration app. 
-
+![Folder](/img/theme.png)
 Primary color – This is primary color of all buttons and texts. 
 Primary color icon & Text – This is icon and text color which can be white or black.
 Secondary Color – Secondary color is sub ordinate information is displayed on our app. Color is defined with this color.
@@ -79,15 +80,14 @@ Admin can change the company configuration for the deployed application using co
 #### a.	User Inputs
 Company configuration app will create a JSON consisting of below details.
 Contact Information:
- 
+ ![Folder](/img/contact.png)
 Address – Address to be displayed in App.
 Phone – Contact Phone
 Email – Email address
 Website – Website of the contact company.
 Logo Information
- 
-
-Company Logo – Logo of the company to be displayed.
+ ![Folder](/img/logo.png)
+ Company Logo – Logo of the company to be displayed.
 Transparent Logo – Transparent logo to show at background. (On/Off)
 On checking ON for transparent logo for background, user can upload the transparent logo 
 Transparent Logo style – This is style to place the background logo.
@@ -120,5 +120,5 @@ WINDOWS: Documents\Rushabh Instruments\ company_config.json
 
 #### d.	Company confirguration sample JSON
  
-
+[Company Config](/img/company_config.json)
 
