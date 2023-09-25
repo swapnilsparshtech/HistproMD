@@ -50,7 +50,7 @@ Android Studio offers a complete, integrated IDE experience for Flutter.
 ![Project](/img/project.png)
     
     -   assets folder :- This folder contain all images and logos
-![Assets](/img/assets.png)
+![Assets](/img/cold_asset.png)
 
     -   fonts folder :- This folder contain project fonts
 ![Fonts](/img/font.png)
@@ -62,7 +62,7 @@ Android Studio offers a complete, integrated IDE experience for Flutter.
 ~~~
 -   screen folder-\> This folder include all pages of app and ui.
 ~~~
-![Screen](/img/screen.png)
+![Screen](/img/cold_screen.png)
 
     -   about.dart -\> Frame-65, App about screen to show info of app.
     -   brightness.dart -\> Frame-45, User can change LED brightness here. After user change data send to uart and also save in shared preferances.
