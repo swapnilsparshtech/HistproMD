@@ -1,160 +1,127 @@
-# ADMIN CONFIGURATION APP
-## 1.	Introduction
-This document provides an overview of the architecture for the Rushabh Instruments administrator app configurator app. This is application intends to change the details and look and feel of our main HISTPRO Application.  This document outlines the key components, design decisions, and architectural styles used to develop the application.
+# HistoPro® 650 H Tissue Embedding Center Hot Unit
 
-## 2.	Architectural Overview
-"Admin Config App" is an installable and can run over web, which enables the administrator of Rushabh Instruments to configure look and feel and sort of whitelisting the developed HOSTPRO App for users. This allows user to select the theme colors for look and feel, and allows to set predefined company support information for branding.
+## 1.  **About :-**
 
-## 3.	Architectural Design Decisions
-Electron js – As we need to have this installable on client system, as this is not for distribution but for restrictive usage, so we intentionally used electron js for it.
-Html/Css – Simple html and css coding language is use to give better look and feel of the application. 
-Node.js – To run some functions and give compatibility for electron js we used npm package structure with node. 
+The HistoPro 650 Tissue Embedding Center (The Embedding Center) is a modular system to be used for embedding processed tissue in paraffin to prepare the tissue blocks for sectioning. There are two modules in HistoPro® 650 Embedding System. 1. HistoPro 650 H (The Hot Module) is the Hot Module of the system that contains the paraffin tank, two warming trays that can be used either as a mold oven or a cassette bath, two forceps holders, heated work surface and a peltier cooled cold spot. The tissue embedding is performed on this module. 2. HistoPro 650 CS (the Cold Module) is the Cold Module of the system that contains the cold plate.
 
-## 4.	Architectural Views
-### A.	Company Configuration View
-Under Company configuration, we allow user to configure the company details. Here we capture basic company details which are exported in an json file. 
-### B.	Theme Configuration View
-Under theme configuration, we allow user to configure theme colors to be used to show buttons and texts. This exports Json which changes look and feel of the main HISTPRO application.
+## 2.  **Development environment :-**
+A.  Set up an editor :-
 
-## 5.	Folder Structure
-![Folder](/img/source.png)
+Android Studio offers a complete, integrated IDE experience for Flutter.
 
-A standard npm folder structure is maintained. Some dedicated folders are kept to give flexibility to developer for future enhancements.
-Assets > This is common folder to keep css and javascript code which is to be used in application
-Bootstrap > This library is added to make our screens responsive and user friendly. As it gives more functionalities for screen size wise developments.
-Company_config > Code related to company config module is maintained.
-Theme_config > Code related to theme configuration is maintained.
-Package.json > This is main npm file to maintain all used dependencies for npm package.  
-## 6.	Technology Stack
-- Frontend: HTML5, CSS3,JSON.
-- Backend: Node.js.
-- Packaging: electron.js.
+-   [Android Studio](https://developer.android.com/studio), version 2020.3.1 (Arctic Fox) or later (<https://developer.android.com/studio>)
+1.  Install Flutter:-
+-   Open plugin preferences (File \> Settings \> Plugins).
+-   Select Marketplace, select the Flutter plugin and click Install.
+2.  Download Dart and Flutter:-
+-   Download the following installation bundle to get the latest stable release of the Flutter SDK (<https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.10.5-stable.zip>)
+-   Extract the zip file and place the contained flutter in the desired installation location for the Flutter SDK (for example, C:\\src\\flutter).
+-   Download the following installation bundle to get the latest stable release of the Dart SDK (<https://storage.googleapis.com/dart-archive/channels/stable/release/3.0.5/sdk/dartsdk-windows-x64-release.zip>)
+-   Extract the zip file and place the contained dart in the desired installation location for the Dart SDK (for example, C:\\src\\dart).
+3.  Path Setup:
+-   Path setup for Dart:
+~~~
+-   Android Studio-> File->Settings-> Plugins->Language& Frameworks->Flutter
+~~~
+-   Path setup for Dart:
+~~~
+-   Android Studio->File->Settings->Plugins->Language & Frameworks->Dart
+~~~
+4.  Check flutter installation:
+~~~
+-   Android Studio->Tools->Flutter->Flutter Doctor
+~~~
+5.  Deploy Source Code:
+~~~
+-   Android Studio-> File->Open->Select Directory
+~~~
+6.  Install external packages for project:
+~~~
+-   Android Studio-> Tools->Flutter->Flutter Pub Get
+~~~
+7.  Install apk on proculus:
+-   Provide sufficient power to Poculus to power on i.e. Required 06 to 24 voltage. The power supply of 12v (recommended).
+-   Connect the Proculus to your computer via Micro USB (USB DEBUG1. USB HOST3).
+-   Remember when using Micro USB for project download, you must provide a power supply to the LCM.
+-   Android LCM will recognize automatically when USB connects to the DEBUG interface.
+-   Click on Android Studio \> Run \> Run
+-   It will automatically install apk on proculus
+## 3.  **Project Structure and Files:**
+![Project](/img/project.png)
+    
+    -   assets folder :- This folder contain all images and logos
+![Assets](/img/assets.png)
 
-## 7.   Package Installation:
-### A. Node:-
-#### Requirements
-One of the following versions of Node.js must be installed to run npm:
-- 14.x.x >= 14.17.0
-- 16.x.x >= 16.13.0
-- 18.0.0 or higher
-#### Installation
-npm comes bundled with node, & most third-party distributions, by default. Officially supported downloads/distributions can be found at: [nodejs.org/en/download](nodejs.org/en/download)
+    -   fonts folder :- This folder contain project fonts
+![Fonts](/img/font.png)
 
-### B. Electron:-
-#### Installation
-To install prebuilt Electron binaries, use npm. The preferred method is to install Electron as a development dependency in your app:
-~~~
-npm install electron --save-dev
-~~~
-### C. Other Packages
-#### Installation
-To install other packages from package.json:
-~~~
-npm install
-~~~
-## 8. Generate .exe file:
-- To run electron project open cmd in containing project folder and run following command:
-~~~
-electron .
-~~~~
-- To create .exe file run following command:
-~~~
-electron-forge make
-~~~
-- You can find .exe file in following folder:
-~~~~
-Folder Path\out\make\squirrel.windows\x64
-~~~~
-## 9.	App Structure
-Company Configuration File description
-As per our configuration app we create 2 configuration json files.
-A.	Theme configuration
-B.	Company configuration
-These files are utilized to customize our main app as administrator. This way we can change the look and feel of our main app as per client requirement through Admin.
-### A.	Theme Configuration
-JSON file created through admin application built. 
-#### a.	User Inputs
-Admin can change the theme for the deployed application using configuration app. 
-![Folder](/img/theme.png)
-Primary color – This is primary color of all buttons and texts. 
-Primary color icon & Text – This is icon and text color which can be white or black.
-Secondary Color – Secondary color is sub ordinate information is displayed on our app. Color is defined with this color.
-Secondary color icon & Text – This is icon and text color which can be white or black.
-Lighter color for Cells and input fields- This is lighter color to be displaced in input fields.
-#### b.	JSON Structure
-Created JSON file structure is as follows.
-  
-primary_color : This color is primary color of icons and text.
-primary_color_icon_text : Icon and Text color of primary fields.
-secondary_color: Secondary color of icons and texts.
-secondary_color_icon_text : Secondary color of icon and text.
-Lighter_color: Lighter color of input fields.
+    -   lib folder: Main project source code folder
+![Lib](/img/lib.png)
 
-#### c.	Deployment Path
-In order to change the original HISPRO app with this newly created theme, this file has to be pasted in following folder path
+    -   main.dart -\> Startting class of project that have splash screen widget with 4 sec timer for screen. Connection for uart and start timer of getting temperatures.
+~~~
+-   screen folder-\> This folder include all pages of app and ui.
+~~~
+![Screen](/img/screen.png)
 
+    -   about.dart -\> Frame-65, App about screen to show info of app.
+    -   brightness.dart -\> Frame-45, User can change LED brightness here. After user change data send to uart and also save in shared preferances.
+    -   configuration.dart-\> Frame-33, Configuration page is used for show users set temperature setpoints.
+    -   configuration_auto_start.dart -\>Frame-35, Configuration page is used for show users set autostart time.
+    -   configuration_offset.dart-\> Frame-57, Configuration page is used for show users set temperature offsets.
+    -   editstarttime.dart -\> Frame-44, Edit page for edit start time of both hot and cold module.
+    -   errors.dart -\> Frame-73, Errors and warning description page.
+    -   legend.dart -\> Frame – 64, This page have info about both hot and cold module parts.
+    -   runmode.dart -\> Frame-32, Show live temperature and LED brightness.
+    -   temp_offset.dart-\> Frame-56, Edit temperature offset screen
+    -   temp_set_point.dart-\>Frame-39, Edit temperature setpoint.
+~~~    
+-   utils folder-\> app utility folder
 ~~~
-ANDROID: Internal Storage\Rushabh Instruments\theme_config.json
+![Utils](/img/utils.png)
 ~~~
-
-~~~
-WINDOWS: Documents\Rushabh Instruments\ theme_config.json
-~~~
- 
-### d.	Theme config sample JSON
-~~~
-{
-  "primary_color": "#115DDE",
-  "primary_color_icon_text": "#ffffff",
-  "secondary_color": "#E8FF00",
-  "secondary_color_icon_text": "#26335b",
-  "lighter_color": "#ff0000"
-} 
-~~~
-### B.	Company Configuration
-Admin can change the company configuration for the deployed application using configuration app. 
-#### a.	User Inputs
-Company configuration app will create a JSON consisting of below details.
-Contact Information:
- ![Folder](/img/contact.png)
-Address – Address to be displayed in App.
-Phone – Contact Phone
-Email – Email address
-Website – Website of the contact company.
-Logo Information
- ![Folder](/img/logo.png)
- Company Logo – Logo of the company to be displayed.
-Transparent Logo – Transparent logo to show at background. (On/Off)
-On checking ON for transparent logo for background, user can upload the transparent logo 
-Transparent Logo style – This is style to place the background logo.
-
- 
-
-#### b.	JSON Structure
-Created JSON file structure for company theme is as follows.
-  
-contact_info : This is parent data holder which holds contact information object. 
-	address: Address to be displaced.
-	phone : phone to be displaced
-	email: Email to contact
-	website: website to show under contact.
-logo : This parent head holds logo information
-	company_logo : Base64 converted string of uploaded logo is saved,
-	transparent_logo : true or false based on user action for it
-	transparent_logo_for_background : Base 64 converted transparent logo
-	transparent_logo_style: Logo style to be displayed on device.
-
-
-#### c.	Deployment Path
-In order to change the original HISPRO app with this newly created theme, this file has to be pasted in following folder path
-~~~
-ANDROID: Internal Storage\Rushabh Instruments\company_config.json
+-   alarm.dart-\> Alarm and timer for app
+-   color.dart -\> App color constant file
+-   constant.dart-\>App static constant file
+-   converter.dart-\> Data converter file
+-   msg.dart-\> User toast msg file
+-   string.dart-\>App static string constant file
+-   uart.dart-\> Uart connection, data send and receive
+-   uart.api-\> Uart api
 ~~~
 ~~~
-WINDOWS: Documents\Rushabh Instruments\ company_config.json
- ~~~
+-   widgets folder:- App ui folder
+~~~
+![Widget](/img/widgets.png)
+~~~
+-   background_img_stack.dart-\> Background device module images
+-   bk_start_time.dart-\> Widget of Background start time button
+-   bk_temp_edit.dart-\> Widged of background temperature edit buttin
+-   btn_keyboard-\> Widget of keyboard button
+-   btn_setting-\> Widget of setting button
+-   btn_settings_menu-\> Widget of setting button menu
+-   container_icon.dart-\> Rounded circle outer icons
+-   dash.dart-\> Widget of dash line
+-   navbar_menue.dart-\> widget of navbar menu
+-   navbar_title.dart-\> Widget of navbar title
+~~~
+## 4.  **External Library :**
 
-#### d.	Company confirguration sample JSON
- 
-[Company Config](/img/company_config.json)
+| **Package**          | **Recommended Version** | **Descrirption**                                                                                                                                                                         |
+|----------------------|-------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| cupertino_icons      | 1.0.2                   | This is an asset repo containing the default set of icon assets used by Flutter's [Cupertino widgets](https://github.com/flutter/flutter/tree/master/packages/flutter/lib/src/cupertino) |
+| flutter_switch       | 0.3.2                   | A custom switch widget that can have a custom height and width, borders, border radius, colors, toggle size, custom text and icons inside the toggle                                     |
+| fluttertoast         | 8.2.1                   | Toast Library for Flutter, Easily create toast messages in single line of code                                                                                                           |
+| number_system        | 0.0.6+8                 | A package to extend the functionality to convert between number systems                                                                                                                  |
+| event_listener       | 0.2.0                   | A dart package implements NodeJS style event listening functionality                                                                                                                     |
+| cron                 | 0.5.1                   | A time-based job scheduler similar to cron. Run tasks periodically at fixed times or intervals.                                                                                          |
+| sprintf              | 7.0.0                   | Dart implementation of sprintf. Provides simple printf like formatting such as sprintf("hello %s", ["world"]);                                                                           |
+| intl                 | 0.18.1                  | Contains code to deal with internationalized/localized messages, date and number formatting and parsing, bi-directional text, and other internationalization issues.                     |
+| flutter_svg          | 2.0.5                   | An SVG rendering and widget library for Flutter, which allows painting and displaying Scalable Vector Graphics 1.1 files.                                                                |
+| serial_communication | 0.0.2                   | An Android Plugin for Serial Communication which allows you to read and write the data through the available ports                                                                       |
 
+## 5.  **Screen Flow Chart :**
+![Flow](/img/flow.png)
+
+## 6.  **App Flow Chart :**
+![App Flow](/img/app_flow.png)
