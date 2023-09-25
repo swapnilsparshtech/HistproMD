@@ -1,8 +1,8 @@
-# HistoPro® 650 H Tissue Embedding Center Hot Unit
+# HistoPro® 650 H Tissue Embedding Center Cold Unit
 
 ## 1.  **About :-**
 
-The HistoPro 650 Tissue Embedding Center (The Embedding Center) is a modular system to be used for embedding processed tissue in paraffin to prepare the tissue blocks for sectioning. There are two modules in HistoPro® 650 Embedding System. 1. HistoPro 650 H (The Hot Module) is the Hot Module of the system that contains the paraffin tank, two warming trays that can be used either as a mold oven or a cassette bath, two forceps holders, heated work surface and a peltier cooled cold spot. The tissue embedding is performed on this module. 2. HistoPro 650 CS (the Cold Module) is the Cold Module of the system that contains the cold plate.
+The HistoPro 650 Tissue Embedding Center (The Embedding Center) is a modular system to be used for embedding processed tissue in paraffin to prepare the tissue blocks for sectioning. There are one modules in HistoPro® 650 Embedding System. 1.HistoPro 650 CS (the Cold Module) is the Cold Module of the system that contains the cold plate.
 
 ## 2.  **Development environment :-**
 A.  Set up an editor :-
