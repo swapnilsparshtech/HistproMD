@@ -116,7 +116,7 @@ Admin can change the company configuration for the deployed application using co
 #### a.	User Inputs
 Company configuration app will create a JSON consisting of below details.
 Contact Information:
- ![Folder](/img/contact.png)
+ ![Folder](/img/add_contact.png)
 Address – Address to be displayed in App.
 Phone – Contact Phone
 Email – Email address
