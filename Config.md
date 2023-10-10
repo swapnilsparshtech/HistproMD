@@ -108,7 +108,7 @@ WINDOWS: Documents\Rushabh Instruments\ theme_config.json
   "primary_color_icon_text": "#ffffff",
   "secondary_color": "#E8FF00",
   "secondary_color_icon_text": "#26335b",
-  "lighter_color": "#ff0000"
+  "lighter_color": "76"
 } 
 ~~~
 ### B.	Company Configuration
