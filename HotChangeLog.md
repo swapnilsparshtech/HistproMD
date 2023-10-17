@@ -1,5 +1,14 @@
 # Changelog
 
+## [v1.4.0](2023-07-10)
+
+**New design:**
+- Add days in autostart days and time.
+- Add about screen
+- Add autostart days and time on stand by mode
+- Show system time in runmode screen
+
+
 ## [v1.3.0](2023-07-05)
 
 **Fixed bugs:**
