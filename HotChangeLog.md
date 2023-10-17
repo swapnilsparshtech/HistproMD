@@ -1,5 +1,26 @@
 # Changelog
 
+## [v1.5.0](2023-08-8)
+
+**New design:**
+- Dynamic logo get from config json file
+- Loading screen before getting data from Uart
+- Add date time in runmode screen
+- All theme colour are dynamic
+- Add days in autostart to start mode in specific days
+- Show system date and time in autostart
+- Add days for user will be select autostart for specific days
+- Add Service and manufacture contact info
+- Add software and hardware version info
+- Add acknowledgments screen for details of hardware and software
+- Add acknowledgments details screen
+- Add separate error description for hot and cold module
+- Add separate screen for standby mode
+- Show warnings for disconnect hardware
+- Show autostart days and time
+- Show system current time
+- Errors and warnings for all screen
+
 ## [v1.4.0](2023-07-10)
 
 **New design:**
