@@ -4,7 +4,7 @@
 
 **Fixed bugs:**
 - If cold unit is not connected, show that as communication error between hot and cold unit.
-- + and – signs in the square blocks are not centered for changing brightness of the LED.
+- "+" and "–" signs in the square blocks are not centered for changing brightness of the LED.
 - Please see the space between picture of SUN and the xx% in UI compared to Figma.
 - Please check the details before sending a new revision for review.  Ensure that all spellings are correct (example “undoo” instead of “undo” on the number pad for editing temperatures.)
 - While editing a number (temperature, offset, etc.) allow appropriate number of digits (e.g.2 digits) even if it is out of range (e.g. 75) and if the user enters to confirm the out of range number, display a message that the entry was out of range instead of allowing only one digit to be entered.  Currently someone enters 75 deg C, they end up with 5 deg C as a set point which is out of range anyway.
