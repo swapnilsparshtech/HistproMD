@@ -1,4 +1,17 @@
 # Changelog
+## [v1.6.0](2023-10-17)
+
+**New design:**
+- Add valve temperature in runmode, configuration sentpoint, legend and configuration offset
+- Change Setting menu
+- Add Password and security screen
+- Add Enter password screen
+- Add Change Password screen
+- Add Enter new password screen
+- Add Lock configuration function
+- Factory reset all data of shared preferances
+- Show password in configuration on lock mode
+- Edit valve temperature screen
 
 ## [v1.5.0](2023-08-8)
 
