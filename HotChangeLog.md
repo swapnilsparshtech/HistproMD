@@ -1,6 +1,30 @@
 # Changelog
 
-## [1.1.0](2023-10-09)
+## [v1.3.0](2023-07-05)
+
+**Fixed bugs:**
+- If cold unit is not connected, show that as communication error between hot and cold unit.
+- + and – signs in the square blocks are not centered for changing brightness of the LED.
+- Please see the space between picture of SUN and the xx% in UI compared to Figma.
+- Please check the details before sending a new revision for review.  Ensure that all spellings are correct (example “undoo” instead of “undo” on the number pad for editing temperatures.)
+- While editing a number (temperature, offset, etc.) allow appropriate number of digits (e.g.2 digits) even if it is out of range (e.g. 75) and if the user enters to confirm the out of range number, display a message that the entry was out of range instead of allowing only one digit to be entered.  Currently someone enters 75 deg C, they end up with 5 deg C as a set point which is out of range anyway.
+- The entire area for a given number should activate the number push instead of ONLY the printed digit.
+- Look at the UI elements and Style Guide for Primary Buttons (and for that matter for everything else) and implement the changes accordingly.  For example, when user presses the button from default condition, it should change the color to clicked element color and if the processing takes longer than 3 seconds, show the animation to indicate that the system is still processing the last button press to avoid user pressing the same button multiple times while system has not completed the response to the previous button press.
+- The setting button keeps moving up and down while going back.
+- The range for the offset values need to change to -5.0 to +4.9 based on our last discussion regarding communication between Proculus and Firmware.    1. New implementation.
+- Pre-filtering values while editing any entry definitely creates confusion.  We think that it is better to display a message that the selection was out of range if the user presses Confirm button before getting a proper value on the screen.  Also, while accepting and displaying time (for start time) must be a proper time value – e,g, 25:50 or 00:00 are not good values.  Also a space is missing between time and AM for the cold unit start time.
+- Please ensure that going back does not take back to a screen in the same mode unless it was desired.  It should take back to previous level – for example from Configuration menu, back button should go back to RUN mode directly.
+- UI Elements should be sized for max number of digits. The size of the box changes when going from 9 to 10 degrees. Box size should be same regardless of quantity entered.
+- Brightness box -The Layout of Certain elements needs to be improved to match the Figma There is a faint grey outline around the black outline that should not be there Application.
+
+  
+## [v1.2.0](2023-06-28)
+
+**Cold module ui design:**
+- The HistoPro 650 Tissue Embedding Center have two module 1st is hot module and 2nd is cold module. For cold module new figma designa added and we implement in flutter app.
+
+
+## [v1.1.0](2023-06-10)
 
 **Fixed bugs:**
 - Please ensure colored UI Elements are designed in Flutter -> All png imgs replaced with material icon and svg files. Also I create separate widgets for
@@ -17,7 +41,7 @@
 - Only Run Mode Screen with Calculated temperatures displayed as well as Offset Adjust screens will be dynamic screens displaying real time data.
 
 
-## [v1.0.0](2023-09-05)
+## [v1.0.0](2023-05-15)
 **Merged pull requests:**
 - The HistoPro 650 Tissue Embedding Center (The Embedding Center) is a modular system to be used for embedding processed tissue in paraffin to prepare the tissue blocks for sectioning.
 - There are one modules in HistoPro® 650 Embedding System.
