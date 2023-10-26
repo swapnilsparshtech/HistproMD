@@ -13,6 +13,11 @@
 - Show password in configuration on lock mode
 - Edit valve temperature screen
 
+**Known Bugs:**
+- In acknowlodgement page we need to wrap text else text gose to out of screen.
+- Runmode to standby mode switching limited to autostart only.
+- Errors & warnings screen not yet implement.
+
 ## [v1.5.0](2023-08-8)
 
 **New design:**
