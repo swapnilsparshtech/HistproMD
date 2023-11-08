@@ -1,4 +1,16 @@
 # Changelog
+## [v1.7.0](2023-11-8)
+
+**Bug fixes:**
+- UI fixes.
+- Connect and discconnect of Uart connection.
+- On autoconnect send NVVM data to controller.
+- Uart api fixes.
+
+**Queries:**
+- In Passwor for configuration is need to show **** or real number like 1234.
+- For autostart time what should came 00:00AM or 12:00AM(00:05AM or 12:05AM)
+
 ## [v1.6.0](2023-10-17)
 
 **New design:**
