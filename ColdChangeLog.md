@@ -1,6 +1,6 @@
 # Changelog
 
-## [v1.0.0](2023-11-08)
+## [v1.1.0](2023-11-08)
 **Cold module new figma changes:**
 - UI fixes.
 - Connect and discconnect of Uart connection.
